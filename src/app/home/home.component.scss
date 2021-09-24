@@ -1,0 +1,26 @@
+span{
+    background: lightgrey;
+    font-weight: bold;
+    user-select: none;
+    padding: 5px;
+}
+.play-container{
+    padding:2em;
+    border: 2px solid lightgrey;
+    margin-bottom: 1em;
+
+    input{
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+}
+
+.active{
+    background-color: lightblue;
+    border: 5px solid black;
+}
+
+.notactive{
+    background-color: lightgreen;
+    border: 5px solid black;
+}

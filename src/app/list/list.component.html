@@ -1,0 +1,16 @@
+<h2>Test load Local API</h2>
+
+<ul *ngIf="GameList">
+    <li *ngFor="let Game of GameList">
+        <p class="name">{{Game.title}}</p>
+        <p class="country">{{Game.description}}</p>
+        <div *ngIf="Game.published; else content"><p>Published!</p></div>
+        <ng-template #content><p>Pending!</p></ng-template>
+        <b>
+            <a style="color: black;background: blueviolet" class="badge badge-warning" routerLink="/list/{{ Game.id }}">
+            Edit
+            </a>
+        </b>
+
+    </li>
+</ul>
